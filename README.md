@@ -45,5 +45,3 @@ jshell> {
    ```java
    jshell> /exit
    ```
-
-test
