@@ -9,6 +9,6 @@ este desde los tutoriales
 
 ---
 
-1. [Datos generales](datosGenerales.md)
-2. [Introduccion a Java](introJava.md)
+1. [Datos generales](datosGenerales)
+2. [Introduccion a Java](introJava)
 
