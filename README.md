@@ -9,5 +9,5 @@ este desde los tutoriales
 
 ---
 
-1. [Datos generales](/indice/datosGenerales)
+1. [Datos generales](/indice/datosGenerales.md)
 2. [Introduccion a Java](/indice/introJava.md)
