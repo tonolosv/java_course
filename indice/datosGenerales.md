@@ -40,3 +40,7 @@ jshell> {
    ```java
    jshell> /exit
    ```
+
+---
+
+[:leftwards_arrow_with_hook: menu principal](/README.md)
