@@ -185,7 +185,7 @@ Resultado
 
 ![Vectores](/img/vectores.png 'vectores')
 
-### 1.3.2
+### 1.3.2 Matrices
 
 Es una coleccion de celdas bidimensionales, donde se pueden almacenar valores del mismo tipo en ambas direcciones filas y columnas.
 
