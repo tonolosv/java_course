@@ -175,14 +175,36 @@ public class vectores {
 }
 ```
 
-> [!IMPORTANTE]
->
 > int vector [] = new int [5] // indica que aceptara solamente 5 valores
 >
 > String nombres [] = {"Joe", "Juan", "Pedro"}; // el espacio por el momento es de 3 valores
 >
-> el inicio de un vector siempre es _0_
+> el inicio contable de un vector siempre es _0_.
 
 Resultado
 
 ![Vectores](/img/vectores.png 'vectores')
+
+### 1.3.2
+
+Es una coleccion de celdas bidimensionales, donde se pueden almacenar valores del mismo tipo en ambas direcciones filas y columnas.
+
+```java
+public class pruebaMatriz{
+    public static void main(String [] args){
+        int matriz [][] = new int [3][4];
+        matriz [0][0] = 15 ; matriz [1][0] = 24; matriz [2][0] = 38;
+        matriz [0][1] = 17 ; matriz [1][1] = 64; matriz [2][1] = 83;
+        matriz [0][2] = 65 ; matriz [1][2] = 33; matriz [2][2] = 28;
+        matriz [0][3] = 28 ; matriz [1][3] = 17; matriz [2][3] = 99;
+        systems.out.println("Contenido " + matriz [2][0]);
+        systems.out.println("Contenido " + matriz [0][3]);
+    }
+}
+```
+
+El codigo anterior demuestra la construccion de una matriz de 3 columnas y 4 filas. Las posiciones se empieza en [0][0], para determinar el tamaño se puede hacer uso de length.
+
+Resultado
+
+![Matrices](/img/matriz.png 'Matrices')
