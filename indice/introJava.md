@@ -227,8 +227,10 @@ Es una referencia a un grupo de objetos (tipo Object), donde se almacena cualqui
       cars.add("Mazda");
       System.out.println(cars);
   } }
+
+  `[Volvo, BMW, Ford, Mazda]`
   ```
-`[Volvo, BMW, Ford, Mazda]`
+
 ---
 
 [:leftwards_arrow_with_hook: menu principal](/README.md)
