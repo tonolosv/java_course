@@ -213,10 +213,22 @@ Resultado
 
 Es una referencia a un grupo de objetos (tipo Object), donde se almacena cualquier _objeto_ en una coleccion para poder acceder y se requiere de un casting^1 para acceder a ellos. Pueden cambiar el tamaño de la coleccion en forma dinamica, ordenarse, insertar o borrarse los _objetos_.
 
-| COLECCION | DESCRIPCION                                                                                                |
-| :-------: | :---------------------------------------------------------------------------------------------------------: | 
-| ArrayList | Incrementa o disminuye sus elementos de manera dinamica, que se puede encontrar en el paquete `java.util`. |
+- ArrayList: Incrementa o disminuye sus elementos de manera dinamica, que se puede encontrar en el paquete `java.util`.
+
+  ```java
+  import java.util.ArrayList;
+
+  public class Main {
+   public static void main(String[] args) {
+      ArrayList<String> cars = new ArrayList<String>();
+      cars.add("Volvo");
+      cars.add("BMW");
+      cars.add("Ford");
+      cars.add("Mazda");
+      System.out.println(cars);
+  } }
+  ```
 
 ---
-[:leftwards_arrow_with_hook: menu principal](/README.md)
 
+[:leftwards_arrow_with_hook: menu principal](/README.md)
