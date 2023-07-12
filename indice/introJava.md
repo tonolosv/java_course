@@ -217,6 +217,6 @@ Es una referencia a un grupo de objetos (tipo Object), donde se almacena cualqui
 | :-------: | :---------------------------------------------------------------------------------------------------------: | 
 | ArrayList | Incrementa o disminuye sus elementos de manera dinamica, que se puede encontrar en el paquete `java.util`. |
 
---
+---
 [:leftwards_arrow_with_hook: menu principal](/README.md)
-````
+
