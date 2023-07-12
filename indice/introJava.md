@@ -215,12 +215,8 @@ Es una referencia a un grupo de objetos (tipo Object), donde se almacena cualqui
 
 | COLECCION | DESCRIPCION                                                                                                | EJEMPLO |
 | :-------: | :--------------------------------------------------------------------------------------------------------- | :------ |
-| ArrayList | Incrementa o disminuye sus elementos de manera dinamica, que se puede encontrar en el paquete `java.util`. |
-
-```java
-import java.util.ArrayList;
-ArrayList<String> cars = new ArrayList<String>();
-``` |
+| ArrayList | Incrementa o disminuye sus elementos de manera dinamica, que se puede encontrar en el paquete `java.util`. |import java.util.ArrayList;
+ArrayList<String> cars = new ArrayList<String>(); |
 
 
 --
