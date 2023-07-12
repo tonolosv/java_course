@@ -228,7 +228,7 @@ Es una referencia a un grupo de objetos (tipo Object), donde se almacena cualqui
       System.out.println(cars);
   } }
   ```
-
+`[Volvo, BMW, Ford, Mazda]`
 ---
 
 [:leftwards_arrow_with_hook: menu principal](/README.md)
