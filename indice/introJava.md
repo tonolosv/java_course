@@ -9,6 +9,51 @@ Por ello se creo el proyecto "OAK" que contenia funcionabilidades de C, C++ y Ob
 
 ---
 
+## 1.1 Metodo Main
+
+Para iniciar o ejecutar un programa en Java, es el metodo _main()_. El compilador de Java o JVM busca este metodo principal cuando empieza la ejecucion, y su firma tiene que ser reconocida desde el punto de entrada, de lo contrario no inicia el proyecto.
+La ejecucion del programa Java se llama `java.exe`, el cual realiza llamadas de Java Native Interface o JNI y cargan la JVM; `java.exe` analiza la linea de comando, genera un matriz de cadenas e invoca el metodo _main()_. El proceso deamon se adjunta al metodo principal y este a un subproceso se destruye solo cuando el programa Java detiene la ejecucion
+
+![Java Main](/img/Group2-660x330.jpg)
+
+#### Estructura del metodo Main()
+
+```java
+class saludando{
+    public static void main(String[] args){
+        System.out.println("Hola a todos")
+    }
+}
+
+Output:
+Hola a todos
+```
+
+- public: Modificador de acceso, que especifica desde donde y quien puede acceder al metodo. _public_ da disponibilidad global, y se hace de esa manera para que la JVM pueda invocarlo desde fuera de la clase.
+
+- Static: es una **palabra clave** que esta asociada a un metodo, lo que lo convierte en un metodo relacionado con la clase. El método _main()_ es estático para que JVM pueda invocarlo sin instanciar la clase, ahorra el desperdicio innecesario de memoria que habría sido utilizada por el objeto declarado solo para llamar al metodo _main()_ por la JVM
+
+- void: **palabra clave** y sirve para especificar que un metodo no devolvera nada, ya que el metodo _main()_ no devuelve nada, su tipo de retorno es void. Cuando finaliza el metodo _main()_ se detiene el programa de Java; no hay retorno al metodo.
+
+- main(): Nombre del metodo principal de Java. Es el identificador que busca la JVM como punto de partida del programa java. <u>Ojo no es una palabra clave</u>.
+
+- String[] args: Almacena argumentos de linea de comandos de Java y es una matriz de tipo _java.lang.String_ class. Esa es la razón porque se llama _array string_ pero no esta fijo porque el usuario puede usarlo en cualquier nombre en su lugar
+
+```java
+class GeeksforGeeks {
+	public static void main(String[] args)
+	{
+		for (String elem : args)
+			System.out.println(elem);
+	}
+}
+
+output
+1
+2
+3
+```
+
 ## 1.2 Constantes y tipos de datos
 
 Los datos que se presentaran son datos de _Estructuras Primarias_, su caracteristica es manejar <u>un solo valor</u> en el tiempo
@@ -213,7 +258,7 @@ Resultado
 
 Es una referencia a un grupo de objetos (tipo Object), donde se almacena cualquier _objeto_ en una coleccion para poder acceder y se requiere de un casting^1 para acceder a ellos. Pueden cambiar el tamaño de la coleccion en forma dinamica, ordenarse, insertar o borrarse los _objetos_.
 
-- ArrayList: Incrementa o disminuye sus elementos de manera dinamica, que se puede encontrar en el paquete `java.util`.
+- **ArrayList**: Permite almacenar datos en memoria de forma equivalente a los arrays, una ventaja no es necesaria declarar su tamaño. Incrementa o disminuye sus elementos de manera dinamica, independiente del indice y este se puede encontrar en el paquete `java.util`.
 
   ```java
   import java.util.ArrayList;
@@ -228,7 +273,40 @@ Es una referencia a un grupo de objetos (tipo Object), donde se almacena cualqui
       System.out.println(cars);
   } }
 
-  [Volvo, BMW, Ford, Mazda]
+    output
+    [Volvo, BMW, Ford, Mazda]
+
+  ```
+
+- **vector**: coincidente al _ArrayList_ los metodos que aplica se sincronizan mediante al uso de multihilos seguros, pertenecientes al paquete `java.util.package`. Su crecimiento es dimanica por lo que puede crecer o decrecer dinamicamnente
+
+  ```java
+  import java.util.Vector;
+
+  class Main {
+      public static void main(String[] args) {
+          Vector<String> mammals= new Vector<>();
+
+          // Using the add() method
+          mammals.add("Dog");
+          mammals.add("Horse");
+
+          // Using index number
+          mammals.add(2, "Cat");
+          System.out.println("Vector: " + mammals);
+
+          // Using addAll()
+          Vector<String> animals = new Vector<>();
+          animals.add("Crocodile");
+
+          animals.addAll(mammals);
+          System.out.println("New Vector: " + animals);
+      }
+  }
+
+  output
+  Vector: [Dog, Horse, Cat]
+  New Vector: [Crocodile, Dog, Horse, Cat]
   ```
 
 ---
