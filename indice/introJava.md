@@ -1,6 +1,17 @@
 # Introduccion a Java
 
-## Un poco de historia
+    Index
+    1.0 [Un poco de historia](#un-poco-de-historia)
+    1.1 [Metodo Main](#11-metodo-main)
+        * [Estructura del metodo Main](#estructura-del-metodo-main)
+    1.2 [Constantes y tipos de datos](#12-constantes-y-tipos-de-datos)
+        * [Constantes](#121-constantes)
+        * [Variables](#122-variables)
+    1.3 [Vectores y Matrices](#13-vectores-y-matrices)
+        * [Matrices](#132-matrices)
+        * [Colecciones](#133-colecciones)
+
+## 1.0 Un poco de historia
 
 La facilidad que Java presenta al ser multiplataforma, hace que este lenjuage sea cotizado y con gran demanda en el mercado de programacion.
 
