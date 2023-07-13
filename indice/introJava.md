@@ -1,10 +1,10 @@
 # Introduccion a Java
 
     ## Index
-    1.0 [Un poco de historia](#un-poco-de-historia)
-    1.1 [Metodo Main](#11-metodo-main)
-    1.2 [Constantes y tipos de datos](#12-constantes-y-tipos-de-datos)
-    1.3 [Vectores y Matrices](#13-vectores-y-matrices)
+* [Un poco de historia](#un-poco-de-historia)
+* [Metodo Main](#11-metodo-main)
+* [Constantes y tipos de datos](#12-constantes-y-tipos-de-datos)
+* [Vectores y Matrices](#13-vectores-y-matrices)
 
 ## 1.0 Un poco de historia
 
